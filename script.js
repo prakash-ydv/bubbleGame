@@ -10,7 +10,7 @@ let showScore = document.querySelector('#showScore');
 let overOverlay = document.querySelector('#overOverlay');
 let isGameOver = false;
 
-let timer = 10;
+let timer = 60;
 var bubbleHolder = "";
 let point = 0;
 
@@ -47,9 +47,11 @@ function startGame () {
 function reSetGame () {
     timer = 10;
     point = 0;
+    score.innerHTML = 0;
     overOverlay.classList.add('hidden');
     if(isGameOver){
         startGame();
+        genTarget();
     }
 }
 
