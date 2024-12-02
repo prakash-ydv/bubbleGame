@@ -45,7 +45,7 @@ function startGame () {
 }
 
 function reSetGame () {
-    timer = 10;
+    timer = 60;
     point = 0;
     score.innerHTML = 0;
     overOverlay.classList.add('hidden');
