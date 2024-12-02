@@ -5,10 +5,14 @@ let gola = document.getElementsByClassName('gola'); // Use getElementsByClassNam
 let score = document.getElementsByClassName('score')[0]; // Access the first element in the collection
 let start = document.getElementById('startOverlay');
 let targetNumber;
+var finalPoint = 0;
+let showScore = document.querySelector('#showScore');
+let overOverlay = document.querySelector('#overOverlay');
 
 var bubbleHolder = "";
 let timer = 60;
 let point = 0;
+
 
 genTarget();
 
@@ -27,10 +31,13 @@ function startGame () {
     setInterval(() => {
         if (timer !== 0) {
             timer -= 1;
+        }else{
+            overOverlay.classList.remove('hidden');
+            showScore.innerHTML = point;
         }
         time.textContent = timer;
     }, 1000);
-
+    
     start.classList.add('hidden');
 }
 
@@ -47,6 +54,7 @@ Array.from(gola).forEach((oneGola) => {
             oneGola.innerHTML="X"
             point+=1;
             score.innerHTML = point;
+            finalPoint = point
             genTarget(); // Generate a new target number after each correct click
         }else{
             point-=1;
@@ -56,6 +64,5 @@ Array.from(gola).forEach((oneGola) => {
 });
 
 
-// skip target
 
 
