@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+<body class="">
+
+    <div id="startOverlay" class="fixed inset-0 backdrop-filter: blur() bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <button 
+          onclick="startGame()" 
+          class=" text-white bg-purple-700 text-2xl px-8 py-3 rounded-lg cursor-pointer">
+          START
+        </button>
+    </div> 
+
+
+    <div class="wrapper bg-purple-200 h-screen w-screen flex gap-4 flex-col items-center justify-center">
+    
+ 
+        <div class="board h-[600px] w-[350px] bg-red-300 rounded-lg p-1">
+
+            <div class="stats rounded-lg bg-red-900 mb-3 h-fit w-full flex items-center justify-between p-7 text-white text-xl">
+
+                <div class="time flex items-center gap-2 bg-red-300 rounded-lg">
+                <div class="p-1">Time</div>
+                <div id="time" class="bg-white text-black p-1 rounded-md">60</div>
+
+            </div>
+
+
+            <div class="time flex items-center gap-2 bg-red-300 rounded-lg">
+                <div class="p-1">Target</div>
+                <div id="target" class="bg-white text-black p-1 rounded-md">X</div>
+            </div>
+
+
+            <div class="time flex items-center gap-2 bg-red-300 rounded-lg">
+                <div class="p-1">Score</div>
+                <div class="score bg-white text-black p-1 rounded-md">0</div>
+            </div>
+            
+            </div>
+
+            <div class="console flex flex-wrap items-center justify-center"></div>
+
+        </div>
+
+        <button onclick="genTarget()" class="bg-red-900 p-3 px-14 text-white rounded-lg mt-2"> SKIP </button>
+
+
+        <script src="script.js"></script>
+</body>
+</html>
