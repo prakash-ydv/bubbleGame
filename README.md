@@ -1,25 +1,25 @@
-# Number Matching Game
+# 🎯 Number Matching Game
 
-This is a number matching game where the player needs to click on bubbles that match the target number. The goal is to score as many points as possible before the timer runs out.
+Welcome to the **Number Matching Game**! 🎮 In this game, you need to click on bubbles that match the target number. The goal is to score as many points as possible before the timer runs out. ⏱️
 
-## Features
+## Features 🌟
 
-- **Target Generation**: A random target number between 0 and 24 is displayed.
-- **Bubbles**: 40 bubbles are displayed with random numbers between 0 and 24.
-- **Score**: The player gains points for correctly clicking the matching bubble and loses points for incorrect clicks.
-- **Timer**: The game is played under a 60-second timer.
-- **Skip Button**: The player can skip to a new target number anytime using the skip button.
-- **Responsive Design**: The layout is fully responsive and works on mobile devices as well.
+- **Target Generation**: A random target number between 0 and 24 is displayed. 🎯
+- **Bubbles**: 40 bubbles with random numbers between 0 and 24 are shown. 🫧
+- **Score**: The player earns points for clicking the correct bubble and loses points for incorrect clicks. 💯
+- **Timer**: The game is played under a 60-second countdown. ⏳
+- **Skip Button**: Skip to a new target number anytime using the skip button. 🔄
+- **Responsive Design**: Fully responsive layout for both desktop and mobile devices. 📱💻
 
-## How to Play
+## How to Play 🎮
 
-1. Start the game by clicking the "START" button.
-2. A target number will appear.
-3. Click on the bubble with the same number as the target.
-4. The score will increase or decrease based on your selection.
-5. Try to achieve the highest score before the timer runs out.
+1. Click the "START" button to begin the game. 🔘
+2. A target number will be displayed at the top. 🎯
+3. Click on the bubble with the same number as the target. 🫧
+4. Your score will increase for a correct click and decrease for an incorrect one. 📉
+5. Try to achieve the highest score before the timer runs out! ⏱️
 
-## Installation
+## Installation 🛠️
 
 Clone the repository to your local machine:
 
