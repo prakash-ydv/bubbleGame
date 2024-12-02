@@ -24,4 +24,4 @@ Welcome to the **Number Matching Game**! 🎮 In this game, you need to click on
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/number-matching-game.git
+git clone https://github.com/prakash-ydv/bubbleGame.git
