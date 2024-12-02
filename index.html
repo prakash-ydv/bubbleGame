@@ -8,7 +8,7 @@
   </head>
 <body class="">
 
-    <div id="startOverlay" class="fixed inset-0  backdrop-filter: blur() bg-black bg-opacity-80 flex items-center justify-center z-50">
+    <div id="startOverlay" class="fixed inset-0 backdrop-filter: blur() bg-black bg-opacity-80 flex items-center justify-center z-50">
         <button 
           onclick="startGame()" 
           class=" text-white bg-purple-700 text-2xl px-8 py-3 rounded-lg cursor-pointer">
@@ -16,9 +16,9 @@
         </button>
     </div> 
 
-    <div id="overOverlay" class=" hidden fixed inset-0 backdrop-filter: blur() bg-black bg-opacity-92 flex items-center justify-center z-50">
+    <div id="overOverlay" class=" hidden flex-col gap-4 fixed inset-0 backdrop-filter: blur() bg-black bg-opacity-92 flex items-center justify-center z-50">
         <h1 class="text-white text-2xl text-center">GAME OVER <br> YOUR  SCORE IS <br><span id="showScore">69</span></h1>
-        <button>Play Again</button>
+        <button onclick="reSetGame()" class="bg-purple-500 text-white rounded-lg p-2 px-3">Play Again</button>
     </div> 
 
 

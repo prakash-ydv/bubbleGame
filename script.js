@@ -8,11 +8,11 @@ let targetNumber;
 var finalPoint = 0;
 let showScore = document.querySelector('#showScore');
 let overOverlay = document.querySelector('#overOverlay');
+let isGameOver = false;
 
+let timer = 10;
 var bubbleHolder = "";
-let timer = 60;
 let point = 0;
-
 
 genTarget();
 
@@ -28,17 +28,29 @@ genTarget();
 
 // Timer 
 function startGame () {
-    setInterval(() => {
+    isGameOver = false;
+    const interval = setInterval(() => {
         if (timer !== 0) {
             timer -= 1;
         }else{
+            clearInterval(interval);
             overOverlay.classList.remove('hidden');
             showScore.innerHTML = point;
+            isGameOver = true;
         }
         time.textContent = timer;
     }, 1000);
     
     start.classList.add('hidden');
+}
+
+function reSetGame () {
+    timer = 10;
+    point = 0;
+    overOverlay.classList.add('hidden');
+    if(isGameOver){
+        startGame();
+    }
 }
 
 // Target number generation
